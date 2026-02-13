@@ -7,8 +7,8 @@ function ViewUser() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    fetchUser();
-  }, []);
+  fetchUser();
+}, []);
 
   const fetchUser = async () => {
     try {
