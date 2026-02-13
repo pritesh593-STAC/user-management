@@ -5,7 +5,6 @@ const connectDB = require("./config/db");
 
 const app = express();
 
-
 app.use(cors({
   origin: "http://localhost:3000",
   methods: ["GET", "POST", "PUT", "DELETE"],
@@ -23,13 +22,8 @@ app.get("/", (req, res) => {
   res.send("server is running");
 });
 
-app.listen(5000, () => {
-  console.log("server listening on port 5000");
-});
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
