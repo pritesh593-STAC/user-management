@@ -35,52 +35,36 @@ function AddUser() {
     <div className="container-fluid mt-4">
       <div className="row justify-content-center">
         <div className="col-lg-6 col-md-8 col-12">
-
           <div className="card bg-dark text-light shadow-lg p-4">
-
-            <h3 className="mb-4 text-center">
-              Add New User
-            </h3>
+            <h3 className="mb-4 text-center">Add New User</h3>
 
             <form onSubmit={handleSubmit}>
-
-              {/* Full Name */}
               <div className="mb-3">
-                <label className="form-label">
-                  Full Name
-                </label>
+                <label className="form-label">Full Name</label>
                 <input
                   type="text"
                   name="fullname"
                   className="form-control"
-                  placeholder="Enter full name"
                   value={form.fullname}
                   onChange={handleChange}
                   required
                 />
               </div>
 
-              {/* Email */}
               <div className="mb-3">
-                <label className="form-label">
-                  Email
-                </label>
+                <label className="form-label">Email</label>
                 <input
                   type="email"
                   name="email"
                   className="form-control"
-                  placeholder="Enter email"
                   value={form.email}
                   onChange={handleChange}
                   required
                 />
               </div>
 
-              {/* Gender */}
               <div className="mb-4">
-                <label className="form-label">
-                  Gender
-                </label>
+                <label className="form-label">Gender</label>
                 <select
                   name="gender"
                   className="form-select"
@@ -94,18 +78,11 @@ function AddUser() {
                 </select>
               </div>
 
-              {/* Button */}
-              <button
-                type="submit"
-                className="btn btn-success w-100"
-              >
+              <button type="submit" className="btn btn-success w-100">
                 Save User
               </button>
-
             </form>
-
           </div>
-
         </div>
       </div>
     </div>

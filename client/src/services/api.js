@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: axios.post("https://your-backend.onrender.com/api/users", data)
-,
+  baseURL: "https://your-backend.onrender.com/api",
 });
 
 export default API;

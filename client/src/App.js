@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar.ejx";
+import Navbar from "./components/Navbar";
 import UserList from "./pages/UserList";
 import AddUser from "./pages/AddUser";
 import ViewUser from "./pages/ViewUser";
