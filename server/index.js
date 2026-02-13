@@ -1,15 +1,10 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
 const connectDB = require("./config/db");
 
 const app = express();
 
-app.use(cors({
-  origin: "http://localhost:3000",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type"],
-}));
+app.use(cors({ origin: "*" }));
 
 app.use(express.json());
 

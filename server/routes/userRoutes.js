@@ -11,7 +11,7 @@ const {
   exportUsers,
 } = require("../controllers/userController");
 
-// IMPORTANT: order matters
+
 
 router.post("/users", createUser);
 router.get("/users", getAllUsers);
