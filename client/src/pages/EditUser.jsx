@@ -12,9 +12,10 @@ function EditUser() {
     gender: "",
   });
 
- useEffect(() => {
+useEffect(() => {
   fetchUser();
-}, [id]);
+  
+}, []);
 
   const fetchUser = async () => {
     try {

@@ -8,6 +8,7 @@ function ViewUser() {
 
   useEffect(() => {
   fetchUser();
+ 
 }, []);
 
   const fetchUser = async () => {
